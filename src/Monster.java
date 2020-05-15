@@ -49,10 +49,11 @@ abstract class Monster {
 
     public boolean isKO() {
         if (this.life <= 0) {
-            System.out.println(this.name + " is KO!");
+//            System.out.println(this.name + " is KO!");
             return true;
+        } else {
+//            System.out.println(this.name + " has " + this.life + " points remaining.");
+            return false;
         }
-        System.out.println(this.name + " has " + this.life + " points remaining.");
-        return false;
     }
 }
